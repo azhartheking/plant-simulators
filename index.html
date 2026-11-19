@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plant DCS Training Simulators</title>
+<meta name="description" content="Browser-based control-room (DCS) training simulators: sulfuric acid alkylation, Spherizone polypropylene and crude distillation. Free, no installation, works offline.">
+<style>
+  :root{--bg:#c6c8ca;--panel:#e6e7e8;--card:#f4f4f3;--ink:#121416;--mut:#4a4e53;--line:#8d9195;--acc:#1d4fbf;--hdr:#9b9ea1}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",Arial,sans-serif}
+  header{background:var(--hdr);border-bottom:1px solid #85898d;padding:22px 16px 18px}
+  .wrap{max-width:1120px;margin:0 auto}
+  h1{margin:0;font-size:28px;letter-spacing:.02em}
+  header p{margin:6px 0 0;color:#26292c;max-width:760px}
+  main{padding:22px 16px 30px}
+  .steps{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px;padding:0;list-style:none}
+  .steps li{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:6px 12px;font-size:13.5px}
+  .steps b{color:var(--acc)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:4px;display:flex;flex-direction:column;overflow:hidden}
+  .card svg{display:block;width:100%;height:auto;background:#d9dbdc;border-bottom:1px solid var(--line)}
+  .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .tag{font:700 11px "Segoe UI";letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+  h2{margin:0;font-size:20px}
+  .body p{margin:0;color:#2c3034;font-size:14px}
+  ul.feat{margin:2px 0 0;padding-left:18px;font-size:13.5px;color:#2c3034}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+  a.btn{display:inline-block;text-decoration:none;border:1px solid #33373b;border-radius:3px;padding:8px 14px;font-weight:600;font-size:14px;color:var(--ink);background:#fff}
+  a.btn.go{background:#3d4248;color:#fff;border-color:#33373b}
+  a.btn:hover{outline:2px solid var(--acc)}
+  .note{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-left:4px solid #f0b000;padding:10px 14px;font-size:13.5px}
+  footer{color:var(--mut);font-size:12.5px;padding:0 16px 24px}
+  @media (prefers-color-scheme:dark){:root{--bg:#1d1f21;--panel:#2a2d30;--card:#25282b;--ink:#eceeef;--mut:#a9adb2;--line:#4a4e53;--hdr:#2f3236;--acc:#7aa7ff}
+    header p,.body p,ul.feat{color:#d4d7da} .card svg{background:#33373b} a.btn{background:#33373b;color:var(--ink);border-color:#5b5f64} a.btn.go{background:#d9dbdc;color:#121416}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Plant DCS Training Simulators</h1>
+  <p>Control-room training simulators that run in your browser. Choose a plant, take over the shift, and practise normal operation, start-up, shutdown and upsets on a live dynamic model. Nothing to install; works on a PC, tablet or phone.</p>
+</div></header>
+<main><div class="wrap">
+  <ol class="steps"><li><b>1</b> Choose a plant</li><li><b>2</b> Choose the session (steady state, start-up, shutdown, drills)</li><li><b>3</b> Choose the difficulty (EASY hints / HARD from the manual)</li><li><b>4</b> Operate the DCS</li></ol>
+  <div class="grid">
+
+  <section class="card">
+    <svg viewBox="0 0 320 120" aria-hidden="true"><g fill="#b3b6b9" stroke="#53575c" stroke-width="1.5"><rect x="40" y="30" width="70" height="60" rx="10"/><rect x="150" y="18" width="26" height="86" rx="12"/><rect x="220" y="48" width="70" height="30" rx="15"/></g><g stroke="#45494e" stroke-width="2.5" fill="none"><path d="M110,60 H150"/><path d="M176,40 H220"/><path d="M176,90 H260 V78"/></g><text x="160" y="114" font-family="Segoe UI" font-size="11" text-anchor="middle" fill="#45494e">reactor · refrigeration · fractionator · utilities</text></svg>
+    <div class="body">
+      <span class="tag">Refinery · alkylation</span>
+      <h2>ALKY-1 Sulfuric Acid Alkylation</h2>
+      <p>Reactor and acid settler, K-301 refrigeration compressor, deisobutanizer, flare, and a full utility block: boiler, steam turbine and 11 kV electrical system, air and nitrogen, demin, deaerator, wastewater and tank farm.</p>
+      <ul class="feat"><li>11 linked DCS pages, one live simulation</li><li>Take-over-shift scenarios with diagnosis</li><li>Alarm horn and equipment sounds</li></ul>
+      <div class="btns"><a class="btn go" href="https://azhartheking.github.io/alky-dcs/">Open simulator</a><a class="btn" href="https://github.com/azhartheking/alky-dcs/archive/refs/heads/main.zip">Download (.zip)</a></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <svg viewBox="0 0 320 120" aria-hidden="true"><g fill="#b3b6b9" stroke="#53575c" stroke-width="1.5"><rect x="120" y="14" width="80" height="18" rx="6"/><rect x="120" y="30" width="22" height="70" rx="4"/><rect x="178" y="30" width="22" height="70" rx="4"/><rect x="250" y="40" width="36" height="56" rx="12"/><rect x="34" y="50" width="44" height="40" rx="10"/></g><g stroke="#45494e" stroke-width="2.5" fill="none"><path d="M78,70 H120"/><path d="M200,60 H250"/></g><text x="160" y="114" font-family="Segoe UI" font-size="11" text-anchor="middle" fill="#45494e">catalyst · multizone reactor · GPR · extrusion</text></svg>
+    <div class="body">
+      <span class="tag">Petrochemical · polypropylene</span>
+      <h2>Spherizone PP Plant</h2>
+      <p>Multizone circulating reactor (riser and downer), gas-phase reactor for impact copolymer, HP flash, steamer, silo and extruder. Six grades from raffia to BOPP and impact copolymer.</p>
+      <ul class="feat"><li>Cold start-up, shutdown and grade changes</li><li>Upset drills, PSVs, flare and SIS</li><li>Student manual, checklists and log sheets</li></ul>
+      <div class="btns"><a class="btn go" href="https://azhartheking.github.io/spherizone-dcs/">Open simulator</a><a class="btn" href="https://azhartheking.github.io/spherizone-dcs/docs/Spherizone-DCS-Simulator-offline.html" download>Download (single file)</a></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <svg viewBox="0 0 320 120" aria-hidden="true"><g fill="#b3b6b9" stroke="#53575c" stroke-width="1.5"><rect x="30" y="50" width="56" height="50" rx="3"/><rect x="140" y="10" width="34" height="96" rx="14"/><rect x="220" y="24" width="60" height="22" rx="11"/><rect x="232" y="60" width="18" height="40" rx="7"/></g><path d="M58,92 Q48,74 58,58 Q68,74 58,92Z" fill="#ff8f1a"/><g stroke="#45494e" stroke-width="2.5" fill="none"><path d="M86,75 H140"/><path d="M157,10 V4 H250 V24"/><path d="M174,70 H232"/></g><text x="160" y="116" font-family="Segoe UI" font-size="11" text-anchor="middle" fill="#45494e">preheat · desalter · heater · T-1101 · stabilizer</text></svg>
+    <div class="body">
+      <span class="tag">Refinery · crude distillation</span>
+      <h2>CDU Unit 11 Crude Distillation</h2>
+      <p>6.5 MTPA atmospheric unit on Bach Ho and Dubai crude: preheat trains and two-stage desalting, fired heater H-1101, 48-tray fractionator with pumparounds and side strippers, overhead and naphtha stabilizer.</p>
+      <ul class="feat"><li>Five operating cases incl. Jet A-1 blend</li><li>Cold start-up, shutdown, crude switches, 12 drills</li><li>34-page manual, checklists and log sheet</li></ul>
+      <div class="btns"><a class="btn go" href="https://azhartheking.github.io/cdu-dcs/">Open simulator</a><a class="btn" href="https://azhartheking.github.io/cdu-dcs/docs/CDU-DCS-Simulator-offline.html" download>Download (single file)</a></div>
+    </div>
+  </section>
+
+  </div>
+  <div class="note"><b>Offline use:</b> a downloaded single file opens by double-click in Edge or Chrome, no internet needed. The online versions can also be installed as an app (⬇ INSTALL APP in the simulator header) and update themselves.</div>
+</div></main>
+<footer><div class="wrap">Training simulators with simplified, training-grade process models. Values are not design data — never use them to operate a real plant. Independent educational project; not affiliated with any refinery, licensor or vendor. Spherizone is a trademark of the LyondellBasell family of companies.</div></footer>
+</body>
+</html>
